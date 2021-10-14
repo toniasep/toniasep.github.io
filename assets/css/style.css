@@ -251,6 +251,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 160px;
   }
 }
+
+
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.8);
@@ -294,6 +296,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #hero {
     text-align: center;
+    background: url("../img/bg.jpg");
+    background-size: cover;
   }
   #hero h1 {
     font-size: 32px;
