@@ -43,7 +43,7 @@
   <!-- ======= Navigation ======= -->
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="#" class="navbar-logo">Asep Toni<span>.</span></a>
+      <a href="#" class="navbar-logo">Asep<span>.</span></a>
 
       <div class="navbar-menu" id="navMenu">
         <a href="#home" class="active">Home</a>
@@ -126,6 +126,10 @@
       </div>
 
       <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/img/profile-img.jpg" alt="Asep Toni">
+        </div>
+
         <div class="about-content">
           <p>
             Experienced Back-End Developer and Freelancer with 7+ years in web development. Passionate about technology,
@@ -166,7 +170,7 @@
               </div>
             </div>
             <div class="info-item">
-              <i class="bx bxs-graduation"></i>
+              <i class="bi bi-mortarboard"></i>
               <div>
                 <strong>Degree</strong>
                 <span>S1 Informatika - UNIKOM</span>
@@ -624,27 +628,46 @@
               <p>+6282283293360</p>
             </div>
           </div>
-        </div>
-        <div class="contact-form"
-          style="display: flex; align-items: center; justify-content: center; text-align: center;">
-          <div style="max-width: 400px;">
-            <h3>Ready to start?</h3>
-            <p>I am available for freelance projects. Feel free to contact me via WhatsApp for faster response.</p>
-            <a href="https://wa.me/6282283293360" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
-              <i class="bx bxl-whatsapp"></i> Chat on WhatsApp
-            </a>
-          </div>
+
+          <a href="https://wa.me/6282283293360" target="_blank" class="btn btn-primary"
+            style="width: 100%; justify-content: center;">
+            <i class="bx bxl-whatsapp"></i> Chat on WhatsApp
+          </a>
         </div>
 
+        <div class="contact-form">
+          <div class="form-alert" id="formAlert">
+            Thank you <strong id="alertName"></strong>! Your message has been sent.
+          </div>
+
+          <form id="contactForm" name="submit-to-google-sheet">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <i class="bi bi-send"></i> Send Message
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
   <!-- ======= Footer ======= -->
   <footer class="footer">
     <div class="container">
-      <p class="footer-logo">Asep Toni<span>.</span></p>
+      <p class="footer-logo">Asep<span>.</span></p>
       <p class="footer-text">Let's build something amazing together.</p>
 
       <div class="footer-social">
